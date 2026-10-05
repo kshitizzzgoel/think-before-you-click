@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Think Before You Click – Cybersecurity Awareness Course</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+<style>
+:root{--bg:#F2F5F7;--tx:#0D1B2A;--mu:#51647A;--card:#fff;--ln:#D3DCE4;--amb:#FFB020;--tl:#2EC4A6;--rd:#FF5C5C;--ink:#0D1B2A;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A121C;--tx:#E6EDF3;--mu:#93A4B7;--card:#111F2F;--ln:#243649}}
+:root[data-theme="dark"]{--bg:#0A121C;--tx:#E6EDF3;--mu:#93A4B7;--card:#111F2F;--ln:#243649}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 17px/1.55 "Bricolage Grotesque",system-ui,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:0 20px 60px}
+header{padding:56px 0 28px;border-bottom:3px solid var(--amb)}
+h1{font-size:clamp(2.4rem,8vw,5rem);line-height:.95;margin:0 0 14px;font-weight:800;letter-spacing:-.03em}
+header p{max-width:60ch;color:var(--mu);margin:0 0 6px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+nav a{color:var(--tx);border:1.5px solid var(--tx);padding:6px 14px;border-radius:999px;text-decoration:none;font-weight:600;font-size:.9rem}
+nav a:hover,nav a:focus-visible{background:var(--tx);color:var(--bg);outline:none}
+section{padding:44px 0 0}
+h2{font-size:1.9rem;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--mu);margin:0 0 18px;max-width:62ch}
+.pl{background:var(--ink);border-radius:14px;overflow:hidden;color:#fff}
+.st{display:grid;grid-template-columns:230px 1fr;gap:28px;align-items:center;min-height:380px;padding:28px 32px;background:radial-gradient(circle at 20% 30%,#1b3a5a 0,var(--ink) 70%);position:relative}
+.ph{width:210px;height:340px;border:5px solid #34506D;border-radius:30px;background:#0A1624;padding:34px 14px 14px;position:relative;overflow:hidden;margin:auto}
+.ph:before{content:"";position:absolute;top:10px;left:50%;width:60px;height:6px;margin-left:-30px;background:#34506D;border-radius:9px}
+.ap{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ap i{aspect-ratio:1;border-radius:14px;display:grid;place-items:center;font:700 .8rem system-ui;font-style:normal;color:#fff;position:relative}
+.ap i b{position:absolute;top:-4px;right:-4px;background:var(--rd);width:14px;height:14px;border-radius:50%;font-size:.6rem;display:grid;place-items:center}
+.bub{background:#1E3550;border-radius:12px;padding:10px 12px;font-size:.78rem;line-height:1.4}
+.bub small{color:#9DB2C8;display:block;margin-bottom:4px}
+.lnk{color:#6CB6FF;text-decoration:underline;word-break:break-all;display:block;margin-top:6px;padding:2px 3px;border-radius:4px}
+.hl .lnk{outline:2px solid var(--amb);animation:bl 1s infinite alternate}
+.hl small{outline:2px solid var(--amb);outline-offset:2px}
+.hl .bub p{outline:2px solid var(--amb);outline-offset:2px;margin:6px 0}
+@keyframes bl{to{outline-color:transparent}}
+.gone .bub{animation:gn 1.6s .6s forwards}
+@keyframes gn{to{opacity:0;transform:translateX(-120%)}}
+.fin{position:absolute;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.55);border:2px solid #fff;left:150px;bottom:30px;animation:fg 3.5s ease-out forwards}
+@keyframes fg{to{left:60px;bottom:128px}}
+.stop{position:absolute;inset:0;display:grid;place-items:center;font-size:clamp(3rem,9vw,5.5rem);font-weight:800;color:#fff;background:rgba(255,92,92,.88);opacity:0;animation:sp .3s 3.2s forwards;letter-spacing:.04em}
+@keyframes sp{to{opacity:1}}
+.big{font-size:clamp(1.7rem,4.5vw,2.8rem);line-height:1.05;margin:0 0 14px;font-weight:800;letter-spacing:-.02em}
+.it{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.it li{border-left:4px solid var(--c,var(--tl));background:rgba(255,255,255,.07);padding:7px 12px;border-radius:0 8px 8px 0;animation:in .5s both}
+.it li:nth-child(2){animation-delay:.5s}.it li:nth-child(3){animation-delay:1s}.it li:nth-child(4){animation-delay:1.5s}.it li:nth-child(5){animation-delay:2s}
+@keyframes in{from{opacity:0;transform:translateX(-14px)}}
+.cap{margin:14px 0 0;color:#B6C6D8;font-size:.95rem;font-style:italic}
+.sh{font-size:4rem;text-align:center;margin-top:60px}
+.ct{display:flex;align-items:center;gap:12px;padding:10px 16px;background:#0A1624}
+.ct button{background:var(--amb);border:0;border-radius:999px;width:38px;height:38px;font-size:1rem;cursor:pointer;color:#0D1B2A}
+.ct button.n{background:transparent;color:#fff;border:1px solid #4a6580;width:auto;padding:0 12px;font-size:.78rem}
+.ct input{flex:1;accent-color:var(--amb)}
+.ct span{font-size:.8rem;color:#9DB2C8;min-width:64px;text-align:right}
+button:focus-visible{outline:3px solid #fff}
+.tw{overflow-x:auto;border:1px solid var(--ln);border-radius:10px;background:var(--card)}
+table{border-collapse:collapse;min-width:1040px;font-size:.84rem;line-height:1.45}
+th{background:var(--ink);color:#fff;text-align:left;padding:10px}
+td{padding:10px;border-top:1px solid var(--ln);vertical-align:top}
+td:first-child{font-weight:800;font-size:1rem}
+.ft{margin-top:44px;color:var(--mu);font-size:.9rem;border-top:1px solid var(--ln);padding-top:16px}
+@media(max-width:700px){.st{grid-template-columns:1fr;padding:20px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;animation-delay:0s!important}}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:12px;padding:16px 18px}
+details{border-bottom:1px solid var(--ln);padding:8px 0}details:last-child{border:0}
+summary{cursor:pointer;font-weight:600}details p{margin:8px 0 2px;color:var(--mu)}
+input[type=text]{width:100%;padding:10px 12px;border:1.5px solid var(--ln);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+.b{background:var(--tx);color:var(--bg);border:0;border-radius:8px;padding:9px 16px;font:600 .95rem inherit;font-family:inherit;cursor:pointer;margin:8px 8px 0 0}
+.b.o{background:transparent;color:var(--tx);border:1.5px solid var(--tx)}
+.bar{height:10px;border-radius:9px;background:var(--ln);overflow:hidden;margin:10px 0}.bar i{display:block;height:100%;width:0;background:var(--tl);transition:width .4s}
+.fl{border-left:4px solid var(--amb);padding:4px 10px;margin:6px 0;background:rgba(255,176,32,.12)}
+.ok{border-left:4px solid var(--tl);padding:4px 10px;margin:6px 0;background:rgba(46,196,166,.14)}
+.bd{border-left:4px solid var(--rd);padding:4px 10px;margin:6px 0;background:rgba(255,92,92,.14)}
+.msg{background:#1E3550;color:#fff;border-radius:12px;padding:12px 14px;margin:8px 0}.msg small{color:#9DB2C8}
+.q{margin:0 0 16px}.q label{display:block;padding:3px 0;cursor:pointer}
+.cert{border:4px double var(--amb);text-align:center;padding:30px 20px}.cert h3{font-size:2rem;margin:6px 0}
+.dn{background:var(--tl)!important;color:#0D1B2A!important}
+#prog{font-weight:600;margin-top:14px}
+@media print{main>*{display:none!important}main>#l11,#l11>*{display:none!important}#l11 #cert{display:block!important}}
+</style></head><body><main>
+<header>
+<h1>Think Before<br>You Click</h1>
+<p>A hands-on cybersecurity awareness course for college students aged 18–25: 3 animated videos, the production storyboard, interactive tools, a scam simulator and a final exam with certificate. Allow about 50 minutes.</p>
+<p>Created by <b>Kshitiz Goel</b> · MCA 3C · VIPS (GGSIPU) · Enrollment No. 17817704425</p>
+<nav></nav><div id="prog"></div>
+</header>
+
+<section id="l1"><h2>Lesson 1 · Think Before You Click</h2>
+<p class="sub">The full 55-second awareness film. Press play; turn on voice-over if you want narration.</p><div class="pl" id="v1"></div></section>
+
+<section id="l2"><h2>Lesson 2 · Four tricks scammers use</h2>
+<p class="sub">Urgency, curiosity, fear and attractive offers: how to recognise each one in 36 seconds.</p><div class="pl" id="v2"></div></section>
+
+<section id="l3"><h2>Lesson 3 · Storyboard</h2>
+<p class="sub">Scene-by-scene plan for the 55-second film. Setting and sound notes sit inside the Visual and Camera columns so a video creator or AI video tool can produce it directly. Style: realistic Indian campus, one young Indian student in a navy hoodie with a backpack, navy and teal palette with amber warning accents, clean UI overlays, calm serious tone, no frightening imagery.</p>
+<div class="tw"><table><thead><tr><th>Scene</th><th>Duration</th><th>Visual (incl. background)</th><th>Action</th><th>Dialogue / Voice-over</th><th>On-screen text</th><th>Camera / Transition / Sound</th></tr></thead><tbody>
+<tr><td>1<br>Everyday digital life</td><td>0–8 s</td><td>Sunny college courtyard with benches, trees and students walking behind in soft focus. Student sits on a bench, phone in hand. Subtle floating app icons (Instagram, WhatsApp, UPI) hover near the phone.</td><td>Scrolls Instagram, replies on WhatsApp, glances at a UPI payment app. Relaxed, natural smile.</td><td>“We use the internet every day. But how safe are we when we click?”</td><td>“Your digital life. Your responsibility.”</td><td>Wide establishing shot, slow push-in over the shoulder to the phone screen. Soft cross-dissolve out. Sound: light lo-fi ambient music, gentle notification pings.</td></tr>
+<tr><td>2<br>The suspicious message</td><td>8–16 s</td><td>Close-up of the phone screen on the same bench, shallow depth of field. SMS from an unknown number: “Congratulations! You have won ₹10,000! Claim your reward now.” with a shortened link below (bit.ly-style URL) glowing slightly.</td><td>Student's eyebrows rise, a small curious smile, thumb hovers over the screen. Interested but not yet convinced.</td><td>“Scammers often use exciting offers to make you act without thinking.”</td><td>“Too good to be true?”</td><td>Punch-in from phone to face, then back to screen. Quick whip-pan transition. Sound: bright notification ding, then music dips slightly with a low tension pad.</td></tr>
+<tr><td>3<br>The moment of decision</td><td>16–23 s</td><td>Extreme close-up: thumb a few millimetres from the link. Background desaturates to blue-grey; a thin amber ring pulses around the link.</td><td>Thumb moves toward the link and freezes just before the tap. Student's face shows a flicker of doubt.</td><td>“Before you click, stop and think.”</td><td>Large: “STOP!”</td><td>Slow motion into freeze-frame with a glitch-style flash transition. Sound: heartbeat-like pulse, then a clean stop. Music cuts out for one beat.</td></tr>
+<tr><td>4<br>Identify the warning signs</td><td>23–32 s</td><td>The message enlarged full-screen on a dark navy interface background. Three amber callout boxes highlight: sender number, link, and the urgent “Claim now”.</td><td>Callouts appear one by one; a magnifier icon scans each. Student's face fades in as a small picture-in-picture, nodding.</td><td>“Check the sender. Check the link. And be careful when a message pressures you to act immediately.”</td><td>1 Unknown sender · 2 Suspicious link · 3 Urgent request. Then “CHECK → VERIFY → THINK”</td><td>Smooth zoom-in to each highlight, wipe transitions between callouts. Sound: soft UI “tick” on each callout, calm upbeat music resumes.</td></tr>
+<tr><td>5<br>Make the safe choice</td><td>32–40 s</td><td>Back on the campus bench. Quick screens: official bank/organisation website, then the “Report” menu, then the delete bin. Teal tick icons replace amber warnings.</td><td>Student shakes head, lowers thumb, opens the official app/site to check, taps Report as spam, then deletes the message with a relieved smile.</td><td>“Never click blindly. Verify through an official source. If it is suspicious, report it and delete it.”</td><td>“VERIFY • REPORT • DELETE”</td><td>Three quick match-cut shots on the phone, each ending on a tick. Sound: positive confirmation chimes, music warms up.</td></tr>
+<tr><td>6<br>Simple cybersecurity rules</td><td>40–49 s</td><td>Clean dark-navy motion-graphics board. Five flat icons appear in a row: crossed-out OTP, strong password, 2FA shield, update arrow, blocked download file. Student's phone shown small at the side.</td><td>Icons pop in one at a time with a subtle line-draw animation; the student taps the 2FA toggle on.</td><td>“Protect your accounts. Never share OTPs or passwords, use strong passwords, and enable two-factor authentication.”</td><td>Icon labels, then “Small habits. Stronger security.”</td><td>Sliding horizontal transition between icons, final tap-to-toggle close-up. Sound: gentle rhythmic pulse, soft pop on each icon.</td></tr>
+<tr><td>7<br>Final campaign message</td><td>49–55 s</td><td>Student confidently using the phone on campus, then dissolve to a clean cybersecurity background (navy with faint shield and circuit lines). Large title centred.</td><td>Student looks up from the phone, nods to camera, smiles and walks off. Title holds.</td><td>“Think before you click. Verify before you trust. Stay safe online.”</td><td>“THINK BEFORE YOU CLICK.” / “Pause. Verify. Stay Safe.” / “Cybersecurity Awareness Campaign”</td><td>Slow pull-back, dissolve to the title card, hold 2 s, fade to black. Sound: music resolves to a confident final chord and soft shield-lock sound.</td></tr>
+</tbody></table></div></section>
+<section id="l4"><h2>Lesson 4 · Scams you will actually meet</h2><p class="sub">About 6 minutes. Open each card and read the “Do” line.</p><div class="card" id="t4"></div></section>
+<section id="l5"><h2>Lesson 5 · Link Inspector (hands-on)</h2><p class="sub">About 5 minutes. Paste any link or try the samples. The check runs in your browser and nothing is sent anywhere. It spots common red flags only, so it can’t prove a link is safe.</p>
+<div class="card"><input type="text" id="ui" placeholder="e.g. sbi.co.in.kyc-update.top/login" aria-label="Link to inspect"><button class="b" id="ub">Inspect link</button><span id="us"></span><div id="uo"></div></div></section>
+<section id="l6"><h2>Lesson 6 · Password Lab</h2><p class="sub">About 5 minutes. Type a password you do NOT use anywhere, see how long a guessing attack would take, then generate a strong passphrase.</p>
+<div class="card"><input type="text" id="pi" placeholder="Type a test password" aria-label="Test password" autocomplete="off"><div class="bar"><i id="pbar"></i></div><div id="po">Start typing to see the estimate.</div><button class="b o" id="pg">Generate a passphrase</button><div id="pgo" style="font-weight:800;margin-top:10px"></div><p class="sub">Estimate assumes 20 billion guesses per second against a leaked password database. Longer beats cleverer.</p></div></section>
+<section id="l7"><h2>Lesson 7 · UPI and payment safety</h2><p class="sub">About 5 minutes. These are the scams that cost students real money.</p><div class="card" id="t7"></div></section>
+<section id="l8"><h2>Lesson 8 · Spot the Scam (simulator)</h2><p class="sub">About 6 minutes. Eight messages. Decide: scam or safe? Some are genuine.</p><div class="card" id="sim"></div></section>
+<section id="l9"><h2>Lesson 9 · Lock down your accounts</h2><p class="sub">About 6 minutes. Tick what you already do, then do the rest on your phone right now.</p><div class="card" id="ck"></div><h3 style="margin:22px 0 8px">Turn on two-factor authentication</h3><div class="card" id="t9"></div></section>
+<section id="l10"><h2>Lesson 10 · If you get scammed</h2><p class="sub">About 5 minutes. Speed matters: report as early as you can.</p><div class="pl" id="v3"></div><div class="card" id="t10" style="margin-top:16px"></div></section>
+<section id="l11"><h2>Lesson 11 · Final exam and certificate</h2><p class="sub">About 8 minutes. 10 questions. Score 7 or more to unlock your certificate.</p><div class="card" id="ex"></div>
+<div class="card cert" id="cert" hidden><div>🛡️</div><p>This certifies that</p><input type="text" id="cn" placeholder="Type your name" aria-label="Your name" style="text-align:center;max-width:340px"><h3 id="cnn"></h3><p>completed the <b>Think Before You Click</b> cybersecurity awareness course</p><p id="cs"></p><button class="b" onclick="print()">Print / save as PDF</button></div></section>
+<p class="ft">Created by Kshitiz Goel · MCA 3C · Enrollment No. 17817704425. Videos are animated in your browser (no video file); narration uses your device’s built-in voice. Helplines and portals: 1930, cybercrime.gov.in, sancharsaathi.gov.in.</p>
+</main>
+<script>
+const A=(l,c,b)=>`<i style="background:${c}">${l}${b?'<b>1</b>':''}</i>`;
+const apps=`<div class="ap">${A('IG','#C13584',1)}${A('WA','#25A244',1)}${A('UPI','#5B3FD1')}${A('Mail','#E0572A')}${A('Map','#2E86DE')}${A('Pay','#0E8F7E')}</div>`;
+const M=(f,t,l)=>`<div class="bub"><small>${f}</small><p style="margin:0">${t}</p><span class="lnk">${l}</span></div>`;
+const win=M('+91 9XXXX 4471','Congratulations! You have won ₹10,000! Claim your reward now.','bit.ly/c1aim-10k');
+const L=(a,c)=>a.map(t=>`<li${c?` style="--c:${c}"`:''}>${t}</li>`);
+const V={
+1:[
+{d:8,p:apps,big:'Your digital life. Your responsibility.',vo:'We use the internet every day. But how safe are we when we click?'},
+{d:8,p:win,big:'Too good to be true?',vo:'Scammers often use exciting offers to make you act without thinking.'},
+{d:7,p:win+'<div class="fin"></div>',x:'<div class="stop">STOP!</div>',big:'Before you click…',vo:'Before you click, stop and think.'},
+{d:9,p:'<div class="hl">'+win+'</div>',big:'CHECK → VERIFY → THINK',l:['Unknown sender','Suspicious or unfamiliar link','Urgent request to act now'],c:'#FFB020',vo:'Check the sender. Check the link. And be careful when a message pressures you to act immediately.'},
+{d:8,p:'<div class="gone">'+win+'</div><div class="sh" style="margin-top:20px">✅</div>',big:'VERIFY • REPORT • DELETE',l:['Verify through an official source','Report the message','Delete it'],vo:'Never click blindly. Verify through an official source. If it is suspicious, report it and delete it.'},
+{d:9,p:'<div class="sh">🔐</div>',big:'Small habits. Stronger security.',l:['Never share OTPs or passwords','Use strong, unique passwords','Enable two-factor authentication','Keep apps and devices updated','Avoid files from unknown sources'],vo:'Protect your accounts. Never share OTPs or passwords, use strong passwords, and enable two-factor authentication.'},
+{d:6,p:'<div class="sh">🛡️</div>',big:'THINK BEFORE YOU CLICK.',l:['Pause. Verify. Stay Safe.','Cybersecurity Awareness Campaign'],vo:'Think before you click. Verify before you trust. Stay safe online.'}],
+2:[
+{d:9,p:M('Bank Alert','Your account will be BLOCKED in 1 hour. Update KYC now.','secure-kyc-bank.top/login'),big:'Trick 1: Urgency',l:['“Now”, “1 hour”, “last chance”','Real banks never threaten by SMS'],c:'#FFB020',vo:'Trick one: urgency. A deadline is designed to stop you from thinking.'},
+{d:9,p:M('Unknown','Is this you in this video?? 😳','vid-watch.xyz/play'),big:'Trick 2: Curiosity',l:['Shocking or personal teasers','If a friend sent it, ask them first'],c:'#FFB020',vo:'Trick two: curiosity. A shocking teaser makes you tap before you ask who sent it.'},
+{d:9,p:M('Cyber Cell','Unusual login detected. Pay ₹500 fine to avoid action.','pay-fine-now.in/x'),big:'Trick 3: Fear',l:['Threats of fines or legal action','Call the official number yourself'],c:'#FFB020',vo:'Trick three: fear. Scammers scare you so you pay first and question later.'},
+{d:9,p:'<div class="sh">🛡️</div>',big:'Trick 4: Attractive offers',l:['Free phones, cashback, job offers','Your defence: Pause. Verify. Then decide.'],c:'#2EC4A6',vo:'Trick four: offers that are too good to be true. Whatever the trick, pause and verify.'}]};
+
+function Player(el,sc){
+const T=sc.reduce((a,s)=>a+s.d,0);let t=0,pl=false,cur=-1,nar=false,iv;
+el.innerHTML=`<div class="st"><div class="ph"></div><div><h3 class="big"></h3><ul class="it"></ul><p class="cap"></p></div></div><div class="ct"><button class="p" aria-label="Play or pause">▶</button><input type="range" min="0" max="${T*10}" value="0" aria-label="Seek"><span></span><button class="n">Voice-over: off</button></div>`;
+const $=s=>el.querySelector(s),ph=$('.ph'),big=$('.big'),it=$('.it'),cap=$('.cap'),pb=$('.p'),rg=$('input'),tm=$('span'),nb=$('.n');
+function show(i){cur=i;const s=sc[i];ph.innerHTML=s.p+(s.x||'');big.textContent=s.big;it.innerHTML=s.l?L(s.l,s.c).join(''):'';cap.textContent='“'+s.vo+'”';
+if(nar&&pl&&window.speechSynthesis){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(s.vo);u.lang='en-IN';u.rate=.95;speechSynthesis.speak(u)}}
+function ren(){let a=0,i=0;for(;i<sc.length-1&&t>=a+sc[i].d;i++)a+=sc[i].d;if(i!==cur)show(i);rg.value=t*10;tm.textContent=Math.floor(t)+' / '+T+' s'}
+function stop(){pl=false;clearInterval(iv);pb.textContent='▶';if(window.speechSynthesis)speechSynthesis.cancel()}
+function play(){if(t>=T-.05)t=0;pl=true;pb.textContent='❚❚';cur=-1;ren();iv=setInterval(()=>{t+=.1;if(t>=T){t=T-.01;stop();pb.textContent='↺'}ren()},100)}
+pb.onclick=()=>pl?stop():play();
+rg.oninput=()=>{t=rg.value/10;cur=-1;ren()};
+nb.onclick=()=>{nar=!nar;nb.textContent='Voice-over: '+(nar?'on':'off');if(!nar&&window.speechSynthesis)speechSynthesis.cancel();cur=-1;ren()};
+ren()}
+Player(document.getElementById('v1'),V[1]);Player(document.getElementById('v2'),V[2]);
+const q=s=>document.querySelector(s);
+const D=(id,a)=>q('#'+id).innerHTML=a.map(([t,b])=>`<details><summary>${t}</summary><p>${b}</p></details>`).join('');
+D('t4',[
+['Phishing (email)','Fake emails from “banks”, “the college” or “Google” that push you to a login page. Do: open the official app or type the website yourself.'],
+['Smishing (SMS and WhatsApp)','Texts about KYC, parcels, electricity bills or prizes with a short link. Do: ignore the link; check inside the official app.'],
+['Vishing (phone calls)','A caller pretends to be your bank, courier or police and keeps you on the line. Do: hang up and call the number printed on your card.'],
+['QR-code scams','You never scan a QR code to receive money. Fake buyers send QR codes to drain your account. Do: scan only to pay a shop you can see.'],
+['Fake jobs and internships','“Earn ₹5,000 a day liking videos”, or a registration fee for a placement. Real employers don’t charge you. Do: check the company on its official site and LinkedIn.'],
+['Hijacked friend accounts','A friend’s WhatsApp asks for urgent money or a code. Do: call them on a normal phone call before doing anything.'],
+['Fake scholarship and exam notices','Notices asking for fees or Aadhaar details through a form link. Do: open the university’s own portal directly.'],
+['Why they work','Scammers use four triggers: urgency, curiosity, fear and attractive offers. If a message makes you feel one of these strongly, pause. That feeling is the warning sign.']]);
+D('t7',[
+['Collect requests','A “refund” asks you to approve a UPI request. Approving sends money out. You never need a PIN to receive money.'],
+['Never share your UPI PIN or OTP','Not with bank staff, customer care or a buyer. Your PIN is only typed into your own UPI app when you send money.'],
+['Screen-sharing apps','If someone asks you to install AnyDesk, TeamViewer or similar “to fix” a payment, refuse. They can see your OTPs and apps.'],
+['Fake customer-care numbers','Numbers shown in search results or posts can be fake. Use the helpline inside the official app or on your card.'],
+['Marketplace buyers and sellers','Be careful with “buyers” who want to pay in advance or send a QR code. Meet in person where possible and check the payee name before paying.'],
+['Public Wi-Fi','Avoid payments and logins on open Wi-Fi. Use mobile data for banking.'],
+['Quick habit','Before every payment, read the payee name and amount aloud in your head. Two seconds can save ₹10,000.']]);
+D('t9',[
+['Instagram','Settings → Accounts Centre → Password and security → Two-factor authentication → choose your account → pick an authenticator app (better than SMS).'],
+['WhatsApp','Settings → Account → Two-step verification → Turn on → set a 6-digit PIN and add a recovery email.'],
+['Google account','myaccount.google.com → Security → 2-Step Verification → follow the steps; add a backup option.'],
+['Backup codes','Save backup codes in a safe place (not in the same account). Never send them to anyone.']]);
+D('t10',[
+['Step 1: Call 1930','India’s national cybercrime helpline. Call as soon as possible after a financial fraud; early reports give a better chance of freezing money.'],
+['Step 2: Call your bank','Block the card, UPI or account, and note the transaction IDs.'],
+['Step 3: Report online','File a complaint at cybercrime.gov.in with screenshots, numbers, links and transaction IDs. You can also report suspicious calls and messages via Chakshu on sancharsaathi.gov.in.'],
+['Step 4: Secure your accounts','Change passwords from a safe device, turn on two-factor authentication, log out other devices, and warn friends if your account was used.'],
+['Don’t feel ashamed','Scammers are professionals. Reporting quickly helps you and the next student.']]);
+// Link Inspector
+const brands=['sbi','hdfc','icici','paytm','phonepe','amazon','google','instagram','whatsapp','gpay','flipkart','axis','irctc'];
+function insp(u){let r=[],U;try{U=new URL(/^https?:\/\//i.test(u)?u:'http://'+u)}catch{return null}
+const h=U.hostname.toLowerCase(),l=h.split('.'),reg=l.slice(-2).join('.');
+if(!/^https:/i.test(u.trim())&&!/^[a-z]/i.test(u)===false&&U.protocol==='http:'&&/^http:/i.test(u.trim()))r.push('Uses plain http (no encryption).');
+if(u.includes('@'))r.push('Contains “@”, which can hide the real destination.');
+if(/^\d+\.\d+\.\d+\.\d+$/.test(h))r.push('Uses a raw IP address instead of a name.');
+if(h.includes('xn--'))r.push('Uses look-alike (punycode) characters.');
+if(/\.(top|xyz|click|icu|tk|ml|gq|cf|buzz|rest)$/.test(h))r.push('Uses a TLD often seen in scams.');
+if(/^(bit\.ly|tinyurl\.com|t\.co|cutt\.ly|is\.gd|rb\.gy)$/.test(h))r.push('Shortened link: the real destination is hidden.');
+if(l.length>4)r.push('Many subdomains; the real domain is only the last two parts: '+reg+'.');
+if((h.match(/-/g)||[]).length>=3)r.push('Many hyphens in the domain.');
+brands.forEach(b=>{if(h.includes(b)&&!reg.startsWith(b+'.')&&!reg.startsWith(b+'bank')&&!reg.startsWith('online'+b))r.push('Mentions “'+b+'” but the real domain is '+reg+'.')});
+if(/(login|verify|kyc|update|secure|claim|reward|free|bonus|refund|prize)/.test(h+U.pathname))r.push('Pressure words in the address (login, KYC, claim, refund...).');
+return{r:[...new Set(r)],reg}}
+function runI(){const o=insp(q('#ui').value.trim());if(!o)return q('#uo').innerHTML='<div class="fl">Enter a valid link.</div>';
+const n=o.r.length,c=n==0?'ok':n==1?'fl':'bd',v=n==0?'No obvious red flags. Still check who sent it.':n==1?'One red flag. Be careful.':'Very likely a scam. Do not click.';
+q('#uo').innerHTML=`<div class="${c}"><b>${v}</b><br>Real domain: ${o.reg}</div>`+o.r.map(x=>`<div class="fl">⚠ ${x}</div>`).join('')}
+q('#ub').onclick=runI;q('#ui').onkeydown=e=>e.key=='Enter'&&runI();
+q('#us').innerHTML=['https://www.sbi.co.in','sbi.co.in.kyc-update.top/login','http://192.168.4.7/claim-reward','bit.ly/c1aim-10k'].map(s=>`<button class="b o">${s}</button>`).join('');
+q('#us').onclick=e=>{if(e.target.tagName=='BUTTON'){q('#ui').value=e.target.textContent;runI()}};
+// Password lab
+const cm=['password','123456','qwerty','iloveyou','admin','welcome','letmein','india','abc123','111111'];
+const fm=s=>s<1?'instantly':s<60?Math.round(s)+' seconds':s<3600?Math.round(s/60)+' minutes':s<86400?Math.round(s/3600)+' hours':s<3.15e7?Math.round(s/86400)+' days':s<3.15e9?Math.round(s/3.15e7)+' years':'centuries or more';
+q('#pi').oninput=e=>{const v=e.target.value;if(!v){q('#pbar').style.width=0;return q('#po').textContent='Start typing to see the estimate.'}
+let p=0;/[a-z]/.test(v)&&(p+=26);/[A-Z]/.test(v)&&(p+=26);/\d/.test(v)&&(p+=10);/[^a-zA-Z0-9]/.test(v)&&(p+=32);
+let en=v.length*Math.log2(p),t=[];if(cm.some(c=>v.toLowerCase().includes(c))){en=Math.min(en,20);t.push('Contains a very common password.')}
+if(/(.)\1{2,}/.test(v)){en*=.7;t.push('Repeated characters.')}if(v.length<12)t.push('Under 12 characters: add length.');
+const s=2**en/2e10/2,b=q('#pbar');b.style.width=Math.min(100,en/80*100)+'%';b.style.background=en<40?'var(--rd)':en<60?'var(--amb)':'var(--tl)';
+q('#po').innerHTML=`Estimated time to crack: <b>${fm(s)}</b>`+t.map(x=>`<div class="fl">${x}</div>`).join('')};
+const W='maple river ticket orbit lemon cobalt tiger window anchor pixel monsoon harbor violet candle rocket forest mango bridge silver pepper canyon falcon jungle quartz saffron lantern meadow comet ginger summit dolphin velvet thunder'.split(' ');
+q('#pg').onclick=()=>{const r=new Uint32Array(6);crypto.getRandomValues(r);q('#pgo').textContent=[0,1,2,3].map(i=>W[r[i]%W.length]).join('-')+'-'+(10+r[4]%90)+'!'};
+// Simulator
+const S=[
+['SBI-YONO','Dear customer, your account will be blocked today. Update PAN now: sbi-yono-kyc.top/login',1,'Urgency, a .top domain and a request for PAN. Banks do not ask for details by link.'],
+['VM-HDFCBK','482910 is your OTP for login. Do not share it with anyone. (You were just logging in to your own app.)',0,'Genuine when you triggered it. The rule: type it yourself, never tell it to anyone.'],
+['+91 98XXX 22013','Part-time job! Earn ₹5,000/day liking YouTube videos. Message us on Telegram.',1,'Unrealistic pay from an unknown number. Task scams start small and then ask for deposits.'],
+['UPI request','“Amazon Refund Dept” requests ₹2,000. Approve and enter PIN to receive refund.',1,'You never need a PIN to receive money. Approving a request pays them.'],
+['Friend (WhatsApp)','Bro urgent ₹5000, can’t call right now, send to this UPI. Will return tonight.',1,'Classic hijacked account. Call your friend on a normal call first.'],
+['College email (official domain)','Exam form date extended. Check the circular on the university portal.',0,'No link, no pressure, and you can verify by opening the portal yourself.'],
+['Instagram','Someone logged in from a new device. Secure now: instagram-help-center.click',1,'Look-alike domain. Open the Instagram app and check Security there.'],
+['India-Post-Track','Your parcel is held. Pay ₹29 customs fee: indiapost-track.icu',1,'Small fee scams steal card details. The domain is not the official one.']];
+let si=0,ss=0;function rs(){const e=q('#sim');if(si>=S.length)return e.innerHTML=`<h3>Score: ${ss}/${S.length}</h3><p>${ss>=7?'Sharp eyes.':'Replay and read the explanations.'}</p><button class="b" onclick="si=0;ss=0;rs()">Play again</button>`;
+const m=S[si];e.innerHTML=`<p>Message ${si+1} of ${S.length}</p><div class="msg"><small>${m[0]}</small><br>${m[1]}</div><button class="b" data-a="1">Scam</button><button class="b o" data-a="0">Safe</button><div id="fb"></div>`}
+q('#sim').onclick=e=>{const a=e.target.dataset.a;if(a===undefined||q('#fb').innerHTML)return;const m=S[si],ok=+a===m[2];ss+=ok;q('#fb').innerHTML=`<div class="${ok?'ok':'bd'}"><b>${ok?'Correct':'Not quite'}: this is ${m[2]?'a scam':'safe'}.</b> ${m[3]}</div><button class="b" id="nx">Next</button>`;q('#nx').onclick=()=>{si++;rs()}};rs();
+// Checklist
+const C=['I never share OTPs, PINs or passwords','I use a different password for email and banking','Two-factor authentication is on for email','Two-factor authentication is on for Instagram and WhatsApp','My phone and apps are updated','I install apps only from official stores','My social profiles hide my phone number and birthday','I check the payee name before every UPI payment','I log out of shared computers','I know to call 1930 after a fraud'];
+q('#ck').innerHTML=C.map((c,i)=>`<label style="display:block;padding:4px 0"><input type="checkbox"> ${c}</label>`).join('')+'<div class="bar"><i id="cb"></i></div><div id="ct"></div>';
+q('#ck').onchange=()=>{const n=q('#ck').querySelectorAll('input:checked').length;q('#cb').style.width=n*10+'%';q('#ct').textContent=n+' of 10 habits done'+(n<10?'. Pick one more and do it now.':'. Excellent.')};q('#ck').onchange();
+// Exam
+const X=[['A stranger texts that you won ₹10,000. Best action?',['Click quickly before it expires','Reply with bank details','Do not click; verify officially and report','Forward it to friends'],2,'Verify through an official source, then report and delete.'],
+['Who is allowed to ask for your OTP?',['Bank staff on a call','Nobody','Anyone who sounds urgent','Your friends'],1,'An OTP is only for you to type yourself.'],
+['Which link is most suspicious?',['https://www.sbi.co.in','sbi.co.in.kyc-update.top/login','https://onlinesbi.sbi','https://hdfcbank.com'],1,'The real domain is kyc-update.top, not sbi.co.in.'],
+['To receive money on UPI you must…',['Enter your UPI PIN','Share an OTP','Do nothing: the PIN is only for sending','Scan a QR code'],2,'Receiving never needs a PIN.'],
+['Which is the strongest password?',['Kshitiz@123','qwerty2024','maple-river-ticket-orbit-47','P@ssw0rd'],2,'Length and randomness beat clever substitutions.'],
+['A friend’s WhatsApp urgently asks for money but can’t talk. First step?',['Send a small amount','Call them on a normal call','Ask for another UPI ID','Ignore forever'],1,'Verify through a different channel.'],
+['Two-factor authentication means…',['Two identical passwords','An extra check beyond your password','Two phones','A backup email'],1,'A second proof, such as an authenticator code.'],
+['After an online financial fraud, which helpline do you call?',['100 only','1930','Nobody; wait a week','Your friend'],1,'1930 is the national cybercrime helpline; call early.'],
+['A message pressures you to act within minutes. This is…',['Proof it is official','A common scam tactic','Safe if it is polite','A sign of a bank'],1,'Urgency is designed to stop you thinking.'],
+['On free café Wi-Fi, you should…',['Do banking quickly','Avoid sensitive logins; use mobile data','Share your OTP to connect','Turn off updates'],1,'Open networks are risky for payments.']];
+q('#ex').innerHTML=X.map((x,i)=>`<div class="q"><b>${i+1}. ${x[0]}</b>`+x[1].map((o,j)=>`<label><input type="radio" name="x${i}" value="${j}"> ${o}</label>`).join('')+'<div class="xe"></div></div>').join('')+'<button class="b" id="xs">Submit exam</button><div id="xr"></div>';
+q('#xs').onclick=()=>{let n=0;X.forEach((x,i)=>{const v=q(`input[name=x${i}]:checked`),ok=v&&+v.value==x[2];n+=!!ok;q('#ex').querySelectorAll('.xe')[i].innerHTML=`<div class="${ok?'ok':'bd'}">${ok?'Correct. ':'Answer: '+x[1][x[2]]+'. '}${x[3]}</div>`});
+q('#xr').innerHTML=`<h3>Score: ${n}/10</h3>`+(n>=7?'<p>Passed. Your certificate is below.</p>':'<p>Review the lessons and try again. You need 7.</p>');q('#cert').hidden=n<7;q('#cs').textContent='Score: '+n+'/10 · '+new Date().toLocaleDateString('en-IN')};
+q('#cn').oninput=e=>q('#cnn').textContent=e.target.value;
+// Video 3
+Player(q('#v3'),[
+{d:9,p:'<div class="sh">📞</div>',big:'Step 1: Call 1930',l:['National cybercrime helpline','Call as early as possible'],c:'#FFB020',vo:'If you lose money online, do not panic. Call 1930 as soon as you can.'},
+{d:9,p:'<div class="sh">🏦</div>',big:'Step 2: Call your bank',l:['Block card, UPI or account','Note transaction IDs'],c:'#FFB020',vo:'Then call your bank and block your card, UPI or account.'},
+{d:9,p:'<div class="sh">📝</div>',big:'Step 3: Report online',l:['cybercrime.gov.in','Keep screenshots and links'],c:'#2EC4A6',vo:'Report at cybercrime.gov.in with screenshots and transaction details.'},
+{d:9,p:'<div class="sh">🔑</div>',big:'Step 4: Secure everything',l:['New passwords from a safe device','Turn on two-factor authentication','Warn friends'],c:'#2EC4A6',vo:'Finally, change your passwords, turn on two-factor authentication and warn your friends.'}]);
+// Progress
+const SC=[...document.querySelectorAll('section')];let dn={};try{dn=JSON.parse(localStorage.getItem('tbyc')||'{}')}catch(e){}
+function up(){const n=SC.filter(s=>dn[s.id]).length;q('#prog').textContent=`Progress: ${n} of ${SC.length} lessons complete`;q('nav').innerHTML=SC.map((s,i)=>`<a href="#${s.id}" title="${s.querySelector('h2').textContent}" ${dn[s.id]?'class="dn"':''}>${i+1}</a>`).join('');SC.forEach(s=>{const b=s.querySelector('.mk');b.textContent=dn[s.id]?'Completed ✓':'Mark lesson complete';b.classList.toggle('dn',!!dn[s.id])})}
+SC.forEach(s=>{const b=document.createElement('button');b.className='b o mk';b.onclick=()=>{dn[s.id]=!dn[s.id];try{localStorage.setItem('tbyc',JSON.stringify(dn))}catch(e){}up()};s.appendChild(b)});up();
+
+</script></body></html>
